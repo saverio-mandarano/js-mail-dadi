@@ -1,0 +1,39 @@
+// Snack 5
+//  Crea un array vuoto. 
+//  Chiedi per 6 volte all’utente di inserire un numero, 
+//  se è dispari inseriscilo nell’array
+const arrayDispari = [];
+
+for (let i=0; i<6; i++) {
+    let number = parseFloat(prompt(`inserisci un numero`));
+
+    while (isNaN(number)){ //check
+        number = parseFloat(prompt(`inserire numero VALIDO`));
+    }
+    
+    if (number % 2 !== 0) {
+       arrayDispari.push(number);
+    }
+}
+console.log(arrayDispari);
+
+// JSnack 2
+// L’utente inserisce due parole in successione, con due prompt. 
+// Il software stampa prima la parola più corta, poi la parola più lunga;
+
+const stringOne = (prompt("Inserisci la prima parola:"));
+const stringTwo = (prompt("Inserisci la seconda parola:"));
+
+if (stringOne.length < stringTwo.length){
+  console.log(`la parola più corta è: ${stringOne}`);
+  console.log(`la parola più lunga è: ${stringTwo}`);
+}
+else if (stringTwo.length < stringOne.length){
+  console.log(`la parola più corta è: ${stringTwo}`);
+  console.log(`la parola più lunga è: ${stringOne}`);
+}
+else{
+  console.log(`le parole sono della stessa lunghezza, ed hanno lunghezza: ${stringOne.length}`);
+  console.log(`la parole è: ${stringOne}` );
+}
+
