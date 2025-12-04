@@ -22,6 +22,8 @@ console.log(`l'email dell'utente è: ${userEmail}`);
 
 // Controlla che sia nella lista di chi può accedere.
 // Stampa un messaggio appropriato sull’esito del controllo.
+// Non è consentito usare nessun metodo proprio degli array (come includes, per esempio).
+// Non è necessario provvedere alla validazione delle email
 let invited = false;
 for (let i=0; i<mailingList.length && invited === false; i++){
 
@@ -37,10 +39,3 @@ if (invited){
 else {
     alert(`We are sorry, but you are not on the guest list...`)`;`
 }
-
-
-// Non è consentito usare nessun metodo proprio degli array (come includes, per esempio).
-
-
-// Nota: 
-// Non è necessario provvedere alla validazione delle email
