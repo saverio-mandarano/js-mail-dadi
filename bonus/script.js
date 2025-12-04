@@ -23,17 +23,27 @@ console.log(arrayDispari);
 
 const stringOne = (prompt("Inserisci la prima parola:"));
 const stringTwo = (prompt("Inserisci la seconda parola:"));
+let shortString;
+let longString;
 
 if (stringOne.length < stringTwo.length){
-  console.log(`la parola più corta è: ${stringOne}`);
-  console.log(`la parola più lunga è: ${stringTwo}`);
+  shortString = stringOne;
+  longString = stringTwo;
 }
 else if (stringTwo.length < stringOne.length){
-  console.log(`la parola più corta è: ${stringTwo}`);
-  console.log(`la parola più lunga è: ${stringOne}`);
+  shortString = stringTwo;
+  longString = stringOne;
 }
 else{
   console.log(`le parole sono della stessa lunghezza, ed hanno lunghezza: ${stringOne.length}`);
-  console.log(`la parole è: ${stringOne}` );
+  console.log(`la prima parole è: ${stringOne}` );
+  console.log(`la seconda parole è: ${stringTwo}`);
 }
+
+if (shortString !== undefined && longString !== undefined) {
+    console.log("Parola più corta:", shortString);
+    console.log("Parola più lunga:", longString);
+}
+
+
 
