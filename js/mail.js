@@ -37,5 +37,5 @@ if (invited){
     alert(`Welcome, we are pleased to confirm that you are on the guest list!`);
 }
 else {
-    alert(`We are sorry, but you are not on the guest list...`)`;`
+    alert(`We are sorry, but you are not on the guest list...`);
 }
