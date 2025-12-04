@@ -7,3 +7,12 @@ console.log(`Computer dice roll: ${computerDiceRoll}`);
 
 
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
+if (userDiceRoll > computerDiceRoll){
+    console.log(`The winner is: User`);
+}
+else if ( computerDiceRoll > userDiceRoll){
+    console.log(`The winner is: Computer`);
+}
+else {
+    console.log(`Draw`);
+}
