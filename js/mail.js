@@ -21,6 +21,7 @@ console.log(`l'email dell'utente è: ${userEmail}`);
 
 
 // Controlla che sia nella lista di chi può accedere.
+// Stampa un messaggio appropriato sull’esito del controllo.
 let invited = false;
 for (let i=0; i<mailingList.length && invited === false; i++){
 
@@ -30,8 +31,14 @@ for (let i=0; i<mailingList.length && invited === false; i++){
 
 }
 
+if (invited){
+    alert(`Welcome, we are pleased to confirm that you are on the guest list!`);
+}
+else {
+    alert(`We are sorry, but you are not on the guest list...`)`;`
+}
 
-// stampa un messaggio appropriato sull’esito del controllo, utilizzando un ciclo for.
+
 // Non è consentito usare nessun metodo proprio degli array (come includes, per esempio).
 
 
