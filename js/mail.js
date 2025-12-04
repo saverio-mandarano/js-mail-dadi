@@ -33,6 +33,8 @@ for (let i=0; i<mailingList.length && invited === false; i++){
 
 }
 
+console.log(`l'utente è invitato? ${invited}`);
+
 if (invited){
     alert(`Welcome, we are pleased to confirm that you are on the guest list!`);
 }
