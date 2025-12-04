@@ -15,6 +15,9 @@ const mailingList = [
 console.log(mailingList);
 
 // Chiedi all’utente la sua email,
+const userEmail = prompt(`Inserisci il tuo indirizzo email:`);
+
+
 // controlla che sia nella lista di chi può accedere,
 // stampa un messaggio appropriato sull’esito del controllo, utilizzando un ciclo for.
 // Non è consentito usare nessun metodo proprio degli array (come includes, per esempio).
